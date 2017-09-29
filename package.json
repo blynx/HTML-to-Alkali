@@ -1,0 +1,14 @@
+{
+  "name": "html-to-alkali",
+  "version": "0.0.1",
+  "description": "PEG.js parser that translates HTML to Alkali element \"markup\"",
+  "main": "index.js",
+  "scripts": {
+    "build:pegjs": "pegjs html-to-alkali.pegjs",
+    "build:watch-peg": "watch 'npm run build:pegjs' .",
+    "postbuild:pegjs": "npm run parse:html",
+    "parse:html": "node index.js"
+  },
+  "author": "Steffen Henschel",
+  "license": "MIT"
+}
